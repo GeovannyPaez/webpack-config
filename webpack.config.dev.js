@@ -8,7 +8,8 @@ module.exports= {
     output: {
         path:path.resolve(__dirname, 'dist'),
         // se le configura para que se sele coloque hass al archivo js
-        filename: '[name].[contenthash].js'
+        filename: '[name].[contenthash].js',
+        clean:true,
     },
     mode:'development',
     watch:true,
@@ -21,6 +22,7 @@ module.exports= {
         //     '@images':path.resolve(__dirname, 'src/images/'),
         // }
     },
+    
     module:{
         rules :[
             {
